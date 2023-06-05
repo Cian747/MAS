@@ -1,5 +1,6 @@
 * {
   margin: 0;
+
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -178,6 +179,14 @@ body {
 
 .cta-section h2 {
   margin-bottom: 1.2rem;
+
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  /* width: 100%; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 }
 
 .cta-section a:link {
@@ -319,6 +328,315 @@ body {
   font-weight: 500;
   color: #333;
 }
+
+
+/* Navigation */
+
+.Navigation{
+  background-color: #1E3653;
+  overflow: hidden;
+  list-style: none;
+}
+
+.nav-logo{
+  width: 30;
+  height: 30;
+}
+
+.Navigation ul{
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  /* margin-left: auto; */
+
+
+}
+
+/* Style the links inside the navigation bar */
+.Navigation li {
+  padding: 20px;
+  /* gap: 72px; */
+  color: #FFFF;
+  font-weight: 300;
+  text-decoration: none;
+  /* width: 548px; */
+  height: 29px;
+}
+
+.Navigation a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.Navigation li:hover {
+  /* background-color: #ddd; */
+  text-decoration: underline;
+  color: #EAF1F0;
+  /* padding: 2px; */
+  /* color: black; */
+}
+
+
+/* Homepage */
+
+.welcome-section{
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+.Homepage-content{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px;
+gap: 10px;
+
+width: 692px;
+height: 468px;
+left: 53px;
+}
+
+.Homepage-content-title{
+width: 600px;
+height: 220px;
+font-family: 'EB Garamond';
+font-style: normal;
+font-weight: 600;
+font-size: 65px;
+line-height: 115%;
+/* padding: 2rem; */
+/* or 110px */
+
+/* Neutrals/900 */
+
+color: #162320;
+}
+
+.Homepage-content-text{
+width: 413px;
+height: 72px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 150%;
+ 
+color: #162320;
+}
+
+button{
+  padding: 1rem;
+  background-color: #1E3653;  
+  border: 2px solid #1E3653;
+}
+
+.btn{
+ color: #FFFF;
+ cursor: pointer;
+}
+
+.testimonial{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 72px;
+  height: 100%;
+  background: #EAF1F0;
+}
+
+.text-wrapper{
+  justify-content: center;
+  align-items: center;
+}
+
+.punchline{
+  display: flex;
+  flex-direction: row;
+  color: #EAF1F0;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+} 
+
+.steps{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.step img{
+  width: 150px;
+  height: 150px; 
+}
+
+.what-we-do{
+  padding: 10px;
+  
+  background: #1E3653;
+}
+
+.about-us{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 2em;
+gap: 70px;
+
+/* width: 100%; */
+height: 593px;
+}
+
+.services-offered{
+  background-color: rgba(229, 236, 244, 0.78);
+  display: flex;
+  flex-direction:row ;
+  width: 100%;
+}
+
+.services-offered-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  /* width: auto; */
+  
+}
+
+/* .services-offered-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+
+} */
+
+.card {
+  background-color: #FFFFFF;
+  margin: 50px auto;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px #BDBDBD;
+}
+.card__image {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  max-height: 200px;
+}
+.card__copy {
+  padding: 20px;
+}
+
+.photo-reference{
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 20px;
+
+}
+
+.photos{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  overflow: hidden;
+}
+
+.photo img{
+  width: 50;
+  
+}
+
+.call-to-action h1{
+  width: 413px;
+  height: 128px;
+
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+}
+
+.CTA{
+  background-color: #1E3653;  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em;
+  gap: 70px;
+  
+  /* width: 100%; */
+  height: 200px;
+  }
+
+.CTA__image{
+  margin-left: 10em;
+}
+
+/* Services */
+.services-welcome{
+  background-color: #1E3653;
+  background-image: url(../public/assets/logo/Moore\ Advanced\ Solutions\ \(Gold\).svg);
+  background-size: no-repeat 100 100;
+  height: 500px;
+
+}
+
+.page-name{
+  color: #FFFFFF;
+  display: flex;
+  font-weight: 500;
+  font-size: 64px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: auto;
+
+}
+
+.services-intro{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+
+.services-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-it-works-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+/* FAQ */
+
+
+/* Footer */
+
+
+
+/* Media Queries */
 /*****************************/
 /* BELOW 1200PX              */
 /*****************************/

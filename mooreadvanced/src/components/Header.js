@@ -1,15 +1,21 @@
-const styling = {
-  backgroundColor: '#1e3653',
-  // backgroundColor: 'red',
-  color: '#fff',
-  height: '8.8rem',
-  position: 'sticky',
-  zIndex: '100',
-  top: '0',
-};
+import { Link } from 'react-router-dom';
 
-const Header = () => {
-  return <div style={styling}>Header</div>;
-};
+function Nav() {
+    return (
+      <div className="Navigation">
+        <div className='nav-logo'>
+          <img src='./assets/logo/MAS (1).png' alt='logo-home'/>
+        </div>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="#about-us">About</Link></li>
+          <li><Link to="#Contactus">Contact Us</Link></li>
+        </ul>
+      </div>
+    );
+  }
+  
+  export default Nav;
 
-export default Header;
+  // THe path with be connected using a slash
