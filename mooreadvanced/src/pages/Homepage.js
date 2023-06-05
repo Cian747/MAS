@@ -1,10 +1,10 @@
-import Nav from "../components/Header"; 
+import Header from "../components/Header"; 
 
 
 function Homepage() {
     return (
         <div>
-            <Nav />
+            <Header />
             <div className='Homepage'>
                 <div className='welcome-section'>
                     <div className='Homepage-content'>

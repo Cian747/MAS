@@ -7,7 +7,7 @@ const About = () => {
       <Header />
       <header className='header'>
         <img
-          src='../assets/logo/Moore Advanced Solutions (1).svg'
+          src='../assets/logo/Moore Advanced Solutions (Gold).svg'
           alt='watermark'
         />
         <div class='header-text'>

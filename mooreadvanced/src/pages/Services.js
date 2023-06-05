@@ -1,9 +1,9 @@
-import Nav from "../components/Header";
+import Header from "../components/Header";
 
 function Services() {
     return(
         <div>
-            <Nav />
+            <Header />
             <div className="services-welcome">
                 <h1 className="page-name"> Our Services</h1>
             </div>

@@ -221,7 +221,7 @@ body {
 }
 
 .contact-wrapper {
-  background-image: url('../public/assets/logo/Moore\ Advanced\ Solutions\ \(1\).svg');
+  /* background-image: url('../public/assets/logo/Moore\ Advanced\ Solutions\ \(1\).svg'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
@@ -336,11 +336,12 @@ body {
   background-color: #1E3653;
   overflow: hidden;
   list-style: none;
+  height: 100%;
 }
 
 .nav-logo{
-  width: 30;
-  height: 30;
+  width: 30px;
+  height: 30px;
 }
 
 .Navigation ul{
@@ -585,8 +586,9 @@ height: 593px;
 /* Services */
 .services-welcome{
   background-color: #1E3653;
-  background-image: url(../public/assets/logo/Moore\ Advanced\ Solutions\ \(Gold\).svg);
-  background-size: no-repeat 100 100;
+  background-image: url('../public/assets/logo/Moore\ Advanced\ Solutions\ \(Gold\).svg');
+  background-size: 100 100;
+  background-repeat: no-repeat;
   height: 500px;
 
 }
