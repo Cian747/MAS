@@ -1,13 +1,419 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.content-wrapper {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/*****************************/
+/* About us                */
+/*****************************/
+
+.header {
+  min-height: 43rem;
+  background-color: #1e3653;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -8%;
+  margin-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.header img {
+  height: 43rem;
+  display: block;
+  margin: 0 auto -8% auto;
+  position: absolute;
+}
+
+.header-text {
+  font-size: 3.2rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20%;
+}
+
+.instructions-section {
+  max-width: 130rem;
+  margin-left: 8rem;
+  margin-right: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2.8rem;
+  gap: 14.8rem;
+
+  background: #fafafa;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  margin-bottom: 5rem;
+}
+
+.instructions-section h3 {
+  flex-basis: 40%;
+}
+
+.instructions-section p {
+  flex-basis: 60%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #162320;
+}
+
+.instructions-section p em {
+  font-weight: 500;
+}
+
+.clientel-section {
+  background-color: #ccddf2c7;
+  padding: 4.6rem;
+  margin-bottom: 2.8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.clientel-section > div {
+  text-align: center;
+}
+
+.clientel-section > div h3 {
+  margin-bottom: 1.8rem;
+}
+
+.clientel-section img {
+  display: inline-block;
+  width: 4rem;
+}
+
+.why-us-section {
+  display: flex;
+  padding: 9.6rem 0 9.6rem 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-us-section .text-box {
+  flex-basis: 60%;
+  padding-right: 2.4rem;
+}
+
+.why-us-section .text-box > h3 {
+  color: #666;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+.why-us-section .text-box > h2 {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 4.6rem;
+}
+
+.why-us-section .text-box ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.why-us-section .text-box ul li img {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 2rem;
+}
+
+.why-us-section .text-box ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.why-us-section .image-box {
+  flex-basis: 40%;
+}
+
+.why-us-section .image-box img {
+  height: 47.8rem;
+}
+
+.cta-section {
+  background-color: #1e3653;
+  color: #e9ebee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem;
+  margin-bottom: 9.6rem;
+}
+
+.cta-section h2 {
+  margin-bottom: 1.2rem;
+}
+
+.cta-section a:link {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #ffe8b2;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  opacity: 0.8;
+  transition: all 0.3s;
+  font-weight: 600;
+  color: #000;
+}
+
+.cta-section a:visited {
+  color: #000;
+}
+
+.cta-section a:hover {
+  opacity: 1;
+}
+
+/*****************************/
+/* Contact us                */
+/*****************************/
+.contact {
+  background-color: #1e3653;
+  padding: 9.6rem;
+}
+
+.contact-wrapper {
+  background-image: url('../public/assets/logo/Moore\ Advanced\ Solutions\ \(1\).svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  display: flex;
+  align-items: flex-start;
+  gap: 8rem;
+  color: #e9ebee;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.description-text {
+  flex-basis: 30%;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.description-text h1 {
+  margin-bottom: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.description-text p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.contact-form {
+  flex-basis: 70%;
+}
+
+.contact-form .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem; */
+}
+
+.contact-form .input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 3.2rem;
+}
+
+.contact-form .input-group label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.contact-form .input-group input,
+.contact-form .input-group textarea {
+  width: 100%;
+  font-size: 1.8rem;
+  background-color: #e0e9f3;
+  border: none;
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+}
+
+.contact-form .input-group textarea {
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #ffe8b2;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  opacity: 0.8;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.contact-form button:hover {
+  opacity: 1;
+}
+
+/*****************************/
+/* Page not found            */
+/*****************************/
+.page-not-found {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.page-not-found h1 {
+  font-size: 12rem;
+  color: #555;
+}
+
+.page-not-found p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+}
+/*****************************/
+/* BELOW 1200PX              */
+/*****************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .description-text,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/*****************************/
+/* BELOW 944PX               */
+/*****************************/
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px */
+    font-size: 50%;
+  }
+  .contact {
+    height: fit-content;
+  }
+
+  .contact-form .row {
+    flex-direction: column;
+  }
+
+  .contact-wrapper {
+    padding-bottom: 2rem;
+  }
+}
+
+/*****************************/
+/* BELOW 768PX               */
+/*****************************/
+@media (max-width: 48em) {
+  .instructions-section {
+    gap: 7rem;
+  }
+
+  .clientel-section {
+    gap: 1.2rem;
+  }
+
+  .why-us-section {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .why-us-section .text-box {
+    padding: 2.1rem 4.2rem;
+  }
+
+  .why-us-section .text-box > h2 {
+    font-size: 3.8rem;
+  }
+
+  .why-us-section .image-box {
+    max-height: 15rem;
+    overflow: hidden;
+  }
+
+  .why-us-section .image-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*****************************/
+/* BELOW 640PX               */
+/*****************************/
+@media (max-width: 40em) {
+  .instructions-section {
+    gap: 3.5rem;
+    flex-direction: column;
+    margin-left: 4rem;
+  }
+
+  .clientel-section {
+    flex-direction: column;
+  }
+
+  .cta-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta-section .text-box {
+    margin-bottom: 1.8rem;
+  }
 }
