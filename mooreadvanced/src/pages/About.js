@@ -1,22 +1,15 @@
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
+import LowerHeader from '../components/LowerHeader';
+import Footer from '../components/Footer';
 
 const About = () => {
   return (
     <>
       <Header />
-      <header className='header'>
-        <img
-          src='../assets/logo/Moore Advanced Solutions (Gold).svg'
-          alt='watermark'
-        />
-        <div class='header-text'>
-          <p>About</p>
-          <p>Moore Advanced Solutions</p>
-        </div>
-      </header>
-      <main className='content-wrapper'>
-        <section className='instructions-section'>
+      <LowerHeader textOne='About' textTwo='Moore Advanced Solutions' />
+      <main className='container'>
+        <section className='instructions-section mb-section '>
           <h3>WE HELP GUIDE INSTITUTIONS</h3>
           <p>
             At <em>Moore Advanced Solutions</em> we offer services that support
@@ -25,40 +18,82 @@ const About = () => {
             and/or organizational objectives.
           </p>
         </section>
-        <section className='clientel-section'>
-          <div>
-            <img src='./assets/images/ngo.png' alt='check icon' />
-            <h3>Non-Profit</h3>
+        <section className='founder-section mb-section '>
+          <div className='founder-section-header'>
+            <div className='text-box'>
+              <h4>Founder</h4>
+              <h3>Kimberlee Moore</h3>
+              <p>President and Principal Consultant</p>
+            </div>
+            <div className='img-box'>
+              <img
+                src='./assets/images/default-user.jpg'
+                alt='moore advance solution founder'
+              />
+            </div>
+          </div>
+          <div className='founder-section-content'>
             <p>
-              Capacity Building, Organizational Leadership and Management
-              Coaching, Quality Management System Development and Implementation
+              Ms. Kimberlee Moore is the President and Principal Consultant at
+              Moore Advanced Solutions She has more than 18 years’ experience
+              advising individuals and organizations on developing and
+              sustaining qualitative improvements in their
+              educational/organizational and quality assurance practices. She
+              has worked with higher education institutions and organizations
+              within the United States and internationally excelling in high
+              pressure and fast- paced environments. She most recently served as
+              the former Chief Accreditation Officer for the American
+              Speech-Language-Hearing Association. Additionally, she has held
+              leadership positions overseeing and supporting programmatic and
+              institutional accreditation activities for higher education
+              institutions in the US, Ecuador, Italy, New Zealand, and Turkey
+              and has served in advisory leadership roles for non-profit and
+              private sector organizations.
+            </p>
+            <p>
+              Ms. Moore is currently completing a Doctorate of Education from
+              the University of the Liverpool, Liverpool, UK. She holds a Master
+              of Public Policy degree from the University of Maryland, College
+              Park, MD; a Postgraduate Certificate in Business Administration
+              from the Georgetown University School of Continuing Studies,
+              Washington, DC; and a Bachelor of Arts degree from the University
+              of Georgia, Athens, GA.
             </p>
           </div>
-          <div>
-            <img src='./assets/images/corporate.png' alt='check icon' />
-            <h3>Corporate</h3>
-            <p>
-              Business goal setting, Professional Development & Training,
-              Organizational Leadership and Management Coaching
-            </p>
-          </div>
-          <div>
-            <img src='./assets/images/degree.png' alt='check icon' />
-            <h3>Higher Education</h3>
-            <p>
-              Institutional and Programmatic Readiness, Feasibility Analysis,
-              Academic Program Development and Assessment Accreditation
-            </p>
-          </div>
-          {/* <div>
-            <h2>Placeholder</h2>
-            <p>
-              Lorem Imconsectetur adipiscing elit. Nunc vulputate libero et
-              velit interdum, ac aliquet odio mattis
-            </p>
-          </div> */}
         </section>
-        <section className='why-us-section'>
+
+        <section className='clientel-section mb-section '>
+          <h2>Services</h2>
+          <div>
+            <div>
+              <img src='./assets/images/degree.png' alt='check icon' />
+              <h3>Higher Education</h3>
+              <p>
+                Institutional and Programmatic Readiness, Feasibility Analysis,
+                Academic Program Development and Assessment Accreditation
+              </p>
+            </div>
+            <div>
+              <img src='./assets/images/ngo.png' alt='check icon' />
+              <h3>Non-Profit</h3>
+              <p>
+                Capacity Building, Organizational Leadership and Management
+                Coaching, Quality Management System Development and
+                Implementation
+              </p>
+            </div>
+            <div>
+              <img src='./assets/images/corporate.png' alt='check icon' />
+              <h3>Corporate</h3>
+              <p>
+                Business goal setting, Professional Development & Training,
+                Organizational Leadership and Management Coaching
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className='why-us-section mb-section '>
           <div className='text-box'>
             <h3>Why Us</h3>
             <h2>Improving Organizational Effectiveness </h2>
@@ -103,6 +138,7 @@ const About = () => {
             />
           </div>
         </section>
+
         <section className='cta-section'>
           <div className='text-box'>
             <h2>Let's work together</h2>
@@ -112,10 +148,11 @@ const About = () => {
           </div>
 
           <div className='link-box'>
-            <Link to='/contact-us'>Schedule a call</Link>
+            <Link to='/contact-us'>Contact us</Link>
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 };

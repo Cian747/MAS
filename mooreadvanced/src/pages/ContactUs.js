@@ -1,10 +1,11 @@
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 const ContactUs = () => {
   return (
     <>
       <Header />
-      <main className='contact'>
+      <main className='contact container'>
         <div className='contact-wrapper'>
           <div className='description-text'>
             <h1>Have any questions for us?</h1>
@@ -65,6 +66,7 @@ const ContactUs = () => {
           </form>
         </div>
       </main>
+      <Footer />
     </>
   );
 };
