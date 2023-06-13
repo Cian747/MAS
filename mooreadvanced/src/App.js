@@ -4,6 +4,7 @@ import ContactUs from './pages/ContactUs';
 import PageNotFound from './pages/PageNotFound';
 import Services from './pages/Services'
 import Homepage from './pages/Homepage';
+import Faq from './pages/Faq';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='/about-us' element={<About />} />
         <Route path='/contact-us' element={<ContactUs />} />
         <Route path='*' element={<PageNotFound />} />
+        <Route path='/faq' element={<Faq />} />        
       </Routes>
     </BrowserRouter>
   );
