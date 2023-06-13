@@ -1,5 +1,6 @@
 import Header from "../components/Header"; 
-
+import Footer from "../components/Footer";
+import { Link } from 'react-router-dom';
 
 function Homepage() {
     return (
@@ -8,63 +9,49 @@ function Homepage() {
             <div className='Homepage'>
                 <div className='welcome-section'>
                     <div className='Homepage-content'>
-                        <h1><span className='Homepage-content-title'>Grow your business today</span></h1>
-                        <br></br>
-                        <p className='Homepage-content-text'>Gorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <br></br>
-                        <button type="button" className="btn btn-primary">Book a call now</button>
+                        <h1><span className='Homepage-content-title'>Strategic Organizational Development Solutions</span></h1>
+                        <p className='Homepage-content-text'>Moore Advanced Solutions is a leading provider of tailored consulting services to higher education institutions, non-profit and corporate organizations.</p>
+                        <div className='target-box'>
+                            <button type="button" className="btn btn-primary"><Link to='/contact-us'>Contact Us</Link></button>
+                        </div>
                     </div>
                     <div className='Homepage-image'>
                         <img src="./assets/images/kevin-matos-Nl_FMFpXo2g-unsplash.jpg" alt="" width={'500'}height={'600'}/>
                     </div>
                 </div>
-                <br></br>
-                {/* testimonial */}
-                 <div className="testimonial">
-                    <div className="text-wrapper">
-                        <h2>Placeholder</h2>
-                        <p className="test-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lorem sed sapien ultrices ultrices sed sed sapien ultrices ultrices sed</p>
-                    </div>
-
-                    <div className="text-wrapper">
-                        <h2>Placeholder</h2>
-                        <p className="test-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lorem sed sapien ultrices ultrices sed sed sapien ultrices ultrices sed</p>
-                    </div>
-
-                    <div className="text-wrapper">
-                        <h2>Placeholder</h2>
-                        <p className="test-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lorem sed sapien ultrices ultrices sed sed sapien ultrices ultrices sed</p>
-                    </div>
-
-                    <div className="text-wrapper">
-                        <h2>Placeholder</h2>
-                        <p className="test-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lorem sed sapien ultrices ultrices sed sed sapien ultrices ultrices sed</p>
-                    </div>
-
-
-                </div>
+                
 
                 {/* What we do */}
                 <section className="what-we-do">
                     <div className="punchline">
                         <h2>A simple and streamlined process</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lorem sed sapien ultrices ultrices sed sed sapien ultrices ultrices sed</p>
+                        <p>MAS goal is to create a supportive and positive consulting experience for all clients. The basis of client
+                        relationships is grounded in listening and identifying needs and collaborating with clients to develop
+                        realistic recommendations and solutions to meet their organizational needs.</p>
                     </div>
                     <div className="steps">
                         <div className="step">
-                            <img src="" alt=""/>
-                            <h2>Placeholder</h2>
-                            <p>Lorem ipsum dolor</p>
+                            <img src="./assets/images/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg" alt=""/>
+                            <h2>Assess/Discovery</h2>
+                            <ul>
+                                <li>Identification of needs.</li>
+                                <li>Development - Diagnosis/Data collection if needed.</li>
+                            </ul>
                         </div>
                         <div className="step">
-                            <img src="" alt=""/>
-                            <h2>Placeholder</h2>
-                            <p>Lorem ipsum dolor</p>
+                            <img src="./assets/images/pexels-christina-morillo-1181605.jpg" alt=""/>
+                            <h2>Plan</h2>
+                            <ul>
+                                <li>Developing an action plan with Startegic recommendations.</li>
+                                <li>Implementation and evaluation.</li>
+                            </ul>
                         </div>
                         <div className="step">
-                            <img src="" alt=""/>
-                            <h2>Placeholder</h2>
-                            <p>Lorem ipsum dolor</p>
+                            <img src="./assets/images/charles-forerunner-3fPXt37X6UQ-unsplash.jpg" alt=""/>
+                            <h2>Optimization</h2>
+                            <ul>
+                                <li>Feedback -Evaluation of the project</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -72,69 +59,79 @@ function Homepage() {
                 {/* About us */}
                 <section className="about-us">
                     <div className="about-us-image">
-                    <img src="./assets/images/kevin-matos-Nl_FMFpXo2g-unsplash.jpg" alt="" width={'500'}height={'600'}/>
+                    <img src="./assets/images/ian-schneider-TamMbr4okv4-unsplash.jpg" alt="" width={'600'}height={'500'}/>
                     </div>
                     <div className="about-us-content">
-                        <h3>About Us</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lorem sed sapien ultrices ultrices sed sed sapien ultrices ultrices sed</p>
+                        <h3>WHAT WE DO</h3>
+                        <p><strong>Moore Advanced Solutions</strong> provides assistance to higher education institutions and non-profit and
+                            corporate organizations to create, maintain, and improve organizational effectiveness. Specifically,
+                            <strong>Moore Advanced Solutions</strong> provides services to assist organizations with their quality assurance, quality
+                            management, and quality improvement needs to successfully achieve their business and/or
+                            organizational objectives. <strong>Moore Advanced Solutions</strong> primary areas of focus include: academic
+                            accreditation and regulatory affairs; board governance and development; organizational capacity
+                            building; and strategic planning, development, implementation, and assessment.</p>
                     </div>
                 </section>
 
                 {/* Services section */}
                 <section className="services-offered">
                     <div className="services-offered-content">
-                        <h2>Services Offered</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lorem sed sapien ultrices ultrices sed sed sapien ultrices ultrices sed</p>
+                        <h1 className="services-offered-title">Our Services</h1>
+                        <p>Moore Advanced Solutions: Tailored consulting for education, non-profits, and corporate organizations to optimize effectiveness and drive sustainable success.</p>
                     </div>
                     <div className="services-offered-list">
-                        <div className="card">
+                        <div className="card main-service">
                             <div className="card__image">
-                            {/* <img src="https://images.unsplash.com/photo-1521139869420-edaae1bc7b9a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="S" /> */}
+                                <img src="./assets/icons/graduation.png" alt="S" height={'80'} width={'80'} />
                             </div>
                             <div className="card__copy">
-                                <h1>Robin Hood's Bay</h1>
-                                <h2>27 October, Noon.</h2>
-                            <p>
-                                --Most strange; no news yet of the ship we wait for. Mrs. Harker
-                                reported last night and this morning as usual: "lapping waves and
-                                rushing water.
-                            </p>
+                                <h1>HIGHER EDUCATION ACCREDITATION</h1>
+                                <br></br>
+                                <ul>
+                                    <li>Institutional and Programmatic Feasibility</li>
+                                    <li>Academic Program Development & Assessment</li>
+                                    <li>Accreditation and Self-Study Development</li>
+                                    <li>Institutional Policy Development</li>
+                                </ul>
                             </div>
                         </div>
                         <div className="card">
                             <div className="card__image">
-                            {/* <img src="https://images.unsplash.com/photo-1521139869420-edaae1bc7b9a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="" /> */}
+                                <img src="./assets/icons/team.png" alt="S" height={'80'} width={'80'}/>
                             </div>
                             <div className="card__copy">
-                                <h1>Robin Hood's Bay</h1>
-                                <h2>27 October, Noon.</h2>
-                            <p>
-                                --Most strange; no news yet of the ship we wait for. Mrs. Harker
-                                reported last night and this morning as usual: "lapping waves and
-                                rushing water.
-                            </p>
+                                <h1>NON PROFIT AND CORPORATE</h1>
+                                <br></br>
+                            
+                            <ul>
+                                <li>Capacity building</li>
+                                <li>Business goal setting</li>
+                                <li>Professional development training</li>
+                            </ul>
                             </div>
                         </div>
-                        <div className="card">
+                        {/* <div className="card">
                             <div className="card__image">
-                            {/* <img src="https://images.unsplash.com/photo-1521139869420-edaae1bc7b9a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="" /> */}
+                                <img src="./assets/icons/corporation.png" alt="non profit and corporate" height={'80'} width={'80'}/>
                             </div>
                             <div className="card__copy">
-                                <h1>Robin Hood's Bay</h1>
-                                <h2>27 October, Noon.</h2>
-                            <p>
-                                --Most strange; no news yet of the ship we wait for. Mrs. Harker
-                                reported last night and this morning as usual: "lapping waves and
-                                rushing water.
-                            </p>
+                                <h1>UNFAIR AND COMPETITIVE ADVANTAGE</h1>
+                                <br></br>
+
+                                <ul>
+                                    <li>Personality- ability to work vertically and horizontally</li>
+                                    <li>Track record with various types of accreditations and and quality initiatives</li>
+                                    <li>Education- Research Area Quality Assurance and Social Justice</li>
+                                </ul>
+
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
 
 
                 {/* Photo reference */}
-                <section className='photo-reference'>
+                {/* <section className='photo-reference'>
                     <div className="photos">
                         <div className="photo">
                             <img src="https://images.unsplash.com/photo-1521139869420-edaae1bc7b9a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt=""/>
@@ -152,21 +149,49 @@ function Homepage() {
                         <button type="button" class="btn -primary">See more photos</button>
                         
                     </div>
-                </section>
+                </section> */}
 
-                <section className="CTA">
-                    <div className="CTA__text">
-                        <h1>The results are satisfying</h1>
-                        <p>There so many companies that have benefited from working with us </p>
+                                {/* testimonial */}
+                {/* this section should come after the services section */}
+                <div className="testimonial">
+                    <div className="text-wrapper">
+                        <h2>Placeholder</h2>
+                        <p className="test-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lorem sed sapien ultrices ultrices sed sed sapien ultrices ultrices sed</p>
                     </div>
-                    <div className="CTA__image">
-                        <div class="d-grid gap-2">
-                          <button type="button" name="" id="" class="btn btn-primary">Button</button>
-                        </div>
+
+                    <div className="text-wrapper">
+                        <h2>Placeholder</h2>
+                        <p className="test-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lorem sed sapien ultrices ultrices sed sed sapien ultrices ultrices sed</p>
+                    </div>
+
+                    <div className="text-wrapper">
+                        <h2>Placeholder</h2>
+                        <p className="test-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lorem sed sapien ultrices ultrices sed sed sapien ultrices ultrices sed</p>
+                    </div>
+
+                    <div className="text-wrapper">
+                        <h2>Placeholder</h2>
+                        <p className="test-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lorem sed sapien ultrices ultrices sed sed sapien ultrices ultrices sed</p>
+                    </div>
+
+
+                </div>
+
+
+                {/* CTA */}
+                <section className='cta-section'>
+                    <div className='text-box'>
+                        <h2>Let's work together</h2>
+                        <p>
+                        Towards better organizational quality assurance and management.
+                        </p>
+                    </div>
+
+                    <div className='link-box'>
+                        <Link to='/contact-us'>Contact us</Link>
                     </div>
                 </section>
-
-                <h1>This is where the footer goes</h1>
+                <Footer />
             </div>
         </div>
     );
