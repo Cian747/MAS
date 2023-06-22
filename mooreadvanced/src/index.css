@@ -32,34 +32,41 @@ body {
 /* About us                */
 /*****************************/
 
-.header {
-  min-height: 43rem;
+.lower-header {
+  min-height: 10rem;
   background-color: #1e3653;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -8%;
+  justify-content: center;
+  /* margin-top: -8%; */
   /* margin-bottom: 5rem; */
   /* margin-bottom: 9.6rem; */
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  /* position: absolute; */
 }
 
-.header img {
+/* .header img {
   height: 43rem;
   display: block;
   margin: 0 auto -8% auto;
   position: absolute;
-}
+} */
 
-.header-text {
+/* .header-text {
   font-size: 3.2rem;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
   position: absolute;
   bottom: 20%;
-}
+} */
 
 .instructions-section {
   max-width: 130rem;
@@ -81,6 +88,7 @@ body {
 
 .instructions-section h3 {
   flex-basis: 40%;
+  text-transform: uppercase;
 }
 
 .instructions-section p {
@@ -92,10 +100,10 @@ body {
   color: #162320;
 }
 
-.instructions-section p em {
+/* .instructions-section p em {
   font-weight: 500;
   color: #b78728;
-}
+} */
 
 .founder-section {
   padding: 4.6rem;
@@ -116,7 +124,8 @@ body {
 }
 
 .founder-section-header .text-box h4 {
-  color: #b78728;
+  /* color: #b78728; */
+  color: #cf8a00;
   letter-spacing: 0.75px;
   text-transform: uppercase;
   margin-bottom: 4.8rem;
@@ -149,11 +158,44 @@ body {
   font-weight: 400;
 }
 
-.clientel-section {
+.prof-engagements-section {
+  padding: 2.3rem 4.6rem 4.6rem 4.6rem;
+  background-color: #ccddf2c7;
+}
+
+.prof-engagements-section h4 {
+  color: #666;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.prof-engagements-section ul {
+  list-style: none;
+}
+
+.prof-engagements-section ul li {
+  margin-bottom: 2.4rem;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.prof-engagements-section ul li img {
+  height: 50px;
+  max-width: 20%;
+  /* width: 100px; */
+}
+
+.prof-engagements-section ul li strong {
+  color: #000;
+}
+
+/* .clientel-section {
   background-color: #ccddf2c7;
   padding: 2.3rem 4.6rem 4.6rem 4.6rem;
-  /* margin-bottom: 2.8rem; */
-  /* margin-bottom: 9.6rem; */
   text-align: center;
 }
 
@@ -171,7 +213,6 @@ body {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  /* text-align: center; */
 }
 
 .clientel-section > div h3 {
@@ -181,7 +222,7 @@ body {
 .clientel-section img {
   display: inline-block;
   width: 4rem;
-}
+} */
 
 .why-us-section {
   display: flex;
@@ -246,7 +287,6 @@ body {
   padding: 3.2rem;
   /* margin-bottom: 9.6rem; */
   height: 100%;
-
 }
 
 .cta-section h2 {
@@ -365,6 +405,11 @@ body {
   resize: none;
 }
 
+.contact-form .input-group.invalid input,
+.contact-form .input-group.invalid textarea {
+  border: 2px solid red;
+}
+
 .contact-form button {
   background-color: #ffe8b2;
   padding: 1.2rem 2.4rem;
@@ -469,18 +514,16 @@ body {
   height: 100%;
 }
 
-.Homepage-content{
+.Homepage-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   /* justify-content: space-between; */
   padding: 10px;
   gap: 85px;
-
 }
 
-.Homepage-content-title{
-
+.Homepage-content-title {
   width: 600px;
   height: 220px;
   font-family: 'EB Garamond';
@@ -496,7 +539,7 @@ body {
   color: #162320;
 }
 
-.Homepage-content-text{
+.Homepage-content-text {
   /* width: 413px;
   height: 72px; */
 
@@ -505,24 +548,23 @@ body {
   font-weight: 300;
   font-size: 24px;
   line-height: 150%;
-  
+
   color: #162320;
 }
 
-button{
+button {
   padding: 2rem;
-  background-color: #1E3653;  
-  border: 2px solid #1E3653;
+  background-color: #1e3653;
+  border: 2px solid #1e3653;
   border-radius: 4px;
   text-decoration: none;
-  color: #E0E9F3;
+  color: #e0e9f3;
 }
 
-.btn{
- color: #FFFF;
- cursor: pointer;
- font-size: large;
-
+.btn {
+  color: #ffff;
+  cursor: pointer;
+  font-size: large;
 }
 
 .testimonial {
@@ -532,7 +574,6 @@ button{
   gap: 72px;
   height: 100%;
   background: #eaf1f0;
-
 }
 
 .text-wrapper {
@@ -549,8 +590,7 @@ button{
   gap: 50px;
 }
 
-.steps{
-
+.steps {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -559,19 +599,17 @@ button{
   padding: 10px;
 }
 
-.step{
+.step {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 15px;
-  color: #EAF1F0;
-  
+  color: #eaf1f0;
 }
 
-.step img{
+.step img {
   width: 350px;
-  height: 250px; 
-
+  height: 250px;
 }
 
 .what-we-do {
@@ -580,7 +618,7 @@ button{
   background: #1e3653;
 }
 
-.about-us{
+.about-us {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -591,19 +629,17 @@ button{
   height: 100%;
 }
 
-.about-us-content{
+.about-us-content {
   gap: 20px;
 }
 
-strong{
-  color: #CF8A00;
+strong {
+  color: #cf8a00;
 }
 
-.about-us-image{
-
+.about-us-image {
   height: 400;
   width: 300;
-
 }
 
 .services-offered {
@@ -614,7 +650,7 @@ strong{
   padding: 20px;
 }
 
-.services-offered-title{
+.services-offered-title {
   font-size: 50px;
 }
 
@@ -623,33 +659,29 @@ strong{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding:40px;
+  padding: 40px;
   gap: 20px;
-  width: 600px; 
-  
-
+  width: 600px;
 }
 
-.services-offered-list{
+.services-offered-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: 1fr;
   padding: 20px;
   gap: 20px;
-
 }
 
 .card {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   /* margin: 50px auto; */
   /* max-width: 500px; */
-  text-align:left;
+  text-align: left;
   border-radius: 4px;
   padding: 20px;
-  box-shadow: 10px 10px 30px #BDBDBD;
+  box-shadow: 10px 10px 30px #bdbdbd;
   list-style: decimal;
   height: 100%;
-
 }
 
 .card__image {
@@ -664,10 +696,9 @@ strong{
   gap: 20px;
 }
 
-.main-service{
-  background-color: #FFE8B2;
+.main-service {
+  background-color: #ffe8b2;
 }
-
 
 .photo-reference {
   display: flex;
@@ -745,15 +776,15 @@ strong{
   padding: 3em;
 }
 
-.services-container{
+.services-container {
   padding: 4em;
 }
 
-.testimonial_image{
+.testimonial_image {
   border-radius: 50%;
 }
 
-.services-list{
+.services-list {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -814,7 +845,7 @@ strong{
 
 .accordion-button {
   padding: 8px 20px;
-  background-color: #1E3653;
+  background-color: #1e3653;
   color: white;
   border: none;
   cursor: pointer;
@@ -843,7 +874,7 @@ strong{
 
 @media screen and (max-width: 500px) {
   .accordion-content {
-     font-size: 16px;
+    font-size: 16px;
   }
 }
 
