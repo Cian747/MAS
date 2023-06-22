@@ -10,7 +10,7 @@ const About = () => {
       <LowerHeader textOne='About' textTwo='Moore Advanced Solutions' />
       <main className='container'>
         <section className='instructions-section mb-section '>
-          <h3>WE HELP GUIDE INSTITUTIONS</h3>
+          <h3>WE HELP SUPPORT ORGANSATIONS</h3>
           <p>
             At <em>Moore Advanced Solutions</em> we offer services that support
             organizations with their quality assurance, quality management and
@@ -23,7 +23,7 @@ const About = () => {
             <div className='text-box'>
               <h4>Founder</h4>
               <h3>Kimberlee Moore</h3>
-              <p>President and Principal Consultant</p>
+              <p>Principal Consultant</p>
             </div>
             <div className='img-box'>
               <img
@@ -51,13 +51,11 @@ const About = () => {
               private sector organizations.
             </p>
             <p>
-              Ms. Moore is currently completing a Doctorate of Education from
-              the University of the Liverpool, Liverpool, UK. She holds a Master
-              of Public Policy degree from the University of Maryland, College
-              Park, MD; a Postgraduate Certificate in Business Administration
-              from the Georgetown University School of Continuing Studies,
-              Washington, DC; and a Bachelor of Arts degree from the University
-              of Georgia, Athens, GA.
+            Ms. Moore is currently completing a Doctorate of Education from the University of the Liverpool,
+            Liverpool, UK. She holds a Master of Public Policy degree from the University of Maryland, College Park,
+            MD,USA; a Postgraduate Certificate in Business Administration from the Georgetown University School of
+            Continuing Studies, Washington, DC,USA; and a Bachelor of Arts degree from the University of Georgia,
+            Athens, GA,USA.
             </p>
           </div>
         </section>
@@ -142,9 +140,9 @@ const About = () => {
         <section className='cta-section'>
           <div className='text-box'>
             <h2>Let's work together</h2>
-            <p>
+            {/* <p>
               Towards better organizational quality assurance and management.
-            </p>
+            </p> */}
           </div>
 
           <div className='link-box'>

@@ -1,166 +1,86 @@
 import Header from "../components/Header";
+import Footer from '../components/Footer';
+import LowerHeader from "../components/LowerHeader";
+// import { Link } from "react-router-dom";
+
 
 function Services() {
     return(
         <div>
             <Header />
-            <div className="services-welcome">
-                <h1 className="page-name"> Our Services</h1>
-            </div>
-            <section className="services-intro">
+            <LowerHeader textOne='SERVICES'/>
+            {/* <section className="services-intro">
                 <div className="services-intro-text">
-                    <h4>SERVICES</h4>
-                    <h1>Here are our current services</h1>
-                    <lr></lr>
-                    <p>Lorem ipsum dolor sit emet dolor asour caor dit met cur</p>
+                    <h5>SERVICES</h5>
+                    <h1>Our Capabilities</h1>
+                    <hr></hr>
+                    <p>I consult with organizations to improve their organizational
+                    effectiveness to reach their organizational and business goals.</p>
                 </div>
-            </section>
+            </section> */}
             <section className="services-container">
-                    <div className="services-list">
-                    <div className="card main-service">
-                            <div className="card__image">
-                                <img src="./assets/icons/graduation.png" alt="S" height={'80'} width={'80'} />
-                            </div>
-                            <div className="card__copy">
-                                <h1>HIGHER EDUCATION ACCREDITATION</h1>
-                                <br></br>
-                                <ul>
-                                    <li>Institutional and Programmatic Feasibility</li>
-                                    <li>Academic Program Development & Assessment</li>
-                                    <li>Accreditation and Self-Study Development</li>
-                                    <li>Institutional Policy Development</li>
-                                </ul>
-                            </div>
+                <div className="service primary">
+                    <div className="service-image">
+                        <img src='./assets/images/alexander-grey-eMP4sYPJ9x0-unsplash.jpg' alt="" width={'500'} height={'500'}/>
+                    </div>
+                    <div className="service-content">
+                        <div className="service-title">
+                            <h2>HIGHER EDUCATION ACCREDITATION</h2>
                         </div>
-                        <div className="card">
-                            <div className="card__image">
-                                <img src="./assets/icons/team.png" alt="S" height={'80'} width={'80'}/>
-                            </div>
-                            <div className="card__copy">
-                                <h1>NON PROFIT AND CORPORATE</h1>
-                                <br></br>
-                            
+                        <p>Higher education institutions have a variety of needs accreditation needs. <i>Moore Advanced Solutions</i> can assist your institution with the following:</p>
                             <ul>
-                                <li>Capacity building</li>
-                                <li>Business goal setting</li>
-                                <li>Professional development training</li>
+                                <li>Academic Program Development and Assessment</li>
+                                <li>Annual Reports</li>
+                                <li>Institutional and Programmatic Readiness Analysis against Selected Standards</li>
+                                <li>Institutional Policy Development</li>
+                                <li>Ongoing Accreditation Compliance Monitoring</li>
+                                <li>Organizational Leadership and Management Coaching</li>
+                                <li>Professional Development and Training</li>
+                                <li>Quality Assurance and Management System Development</li>
+                                <li>Initial or Re-evaluation Self-Study Development and Preparation</li>
+                                <li>Site Visit Preparation</li>
+                                <li>Site visit Responses</li>
+
                             </ul>
-                            </div>
-                        </div>
-                        {/* <div className="card">
-                            <div className="card__image">
-                                <img src="./assets/icons/corporation.png" alt="non profit and corporate" height={'80'} width={'80'}/>
-                            </div>
-                            <div className="card__copy">
-                                <h1>UNFAIR AND COMPETITIVE ADVANTAGE</h1>
-                                <br></br>
-
-                                <ul>
-                                    <li>Personality- ability to work vertically and horizontally</li>
-                                    <li>Track record with various types of accreditations and and quality initiatives</li>
-                                    <li>Education- Research Area Quality Assurance and Social Justice</li>
-                                </ul>
-
-                            </div>
-                        </div> */}
-                    </div>
-            </section>
-
-            {/* Benefit */}
-            <section className='why-us-section'>
-                <div className='text-box'>
-                    <h3>Why Us</h3>
-                    <h2>Improving Organizational Effectiveness </h2>
-                        <ul>
-                        <li>
-                            <img src='./assets/icons/check.svg' alt='check icon' />
-                            <div>
-                            <h3>Trustworthy</h3>
-                            <p>
-                                Personality – Collaborative, Trustworthy; ability to manage
-                                vertically and horizontally
-                            </p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src='./assets/icons/check.svg' alt='check icon' />
-                            <div>
-                            <h3>Track record</h3>
-                            <p>
-                                Proven record with various types of accreditations and
-                                quality initiatives
-                            </p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src='./assets/icons/check.svg' alt='check icon' />
-                            <div>
-                            <h3>Experiences</h3>
-                            <p>
-                                Worked both at institutional, corporate, accrediting
-                                agencies and internationally - USDE, CHEA.
-                            </p>
-                            </div>
-                        </li>
-                        </ul>
+                            {/* <div className='cta-box'>
+                                <Link to='/contact-us'>Contact us</Link>
+                            </div> */}
+                            {/* <div>
+                              <button type="button" name="" id="" class="btn btn-primary"><Link to='/contact-us'>Reach out</Link></button>
+                            </div> */}
                     </div>
 
-                    <div className='image-box'>
-                        <img
-                        src='./assets/images/laptop.jpg'
-                        alt='woman working with a laptop'
-                        />
-                    </div>
-            </section>
-
-
-            {/* How it works */}
-            <section className="how-it-works">
-                <div className="how-it-works-content">
-                    <h3>TESTIMONIALS</h3>
-                    <h1>Words from our current and previous clients</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
                 </div>
-                <div className="services-list">
-                        <div className="card">
-                            <div className="testimonial__image">
-                            <img src="https://images.unsplash.com/photo-1521139869420-edaae1bc7b9a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="Profile" width={'50'} height={'50'} />
-                            <p>John Doe</p>
 
-                            </div>
-                            <div className="card__copy">
-                            <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            </p>
-                            </div>
+                <div className="service">
+                    <div className="service-content">
+                        <div className="service-title">
+                            <h2>ORGANIZATIONAL EFFECTIVENESS</h2>
                         </div>
-                        <div className="card">
-                            <div className="testimonial__image">
-                            <img src="https://images.unsplash.com/photo-1521139869420-edaae1bc7b9a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="Profile" width={'50'} height={'50'} />
-                            <p>John Doe</p>
+                        <p>Organizational effectiveness refers to how effectively an organization achieves its desired goals. As organizations experience growth and expansion, unique
+                            challenges and complexities may occur. <i>Moore Advanced Solutions</i> can provide support to manage such challenge by assisting your organization with the
+                            following:</p>
+                            <ul>
+                                <li>Capacity Building</li>
+                                <li>Business and Goal setting</li>
+                                <li>Organizational Leaderhsip and Management Coaching</li>
+                                <li>Professional Development and Training</li>
+                                <li>Quality Management System Development and Implementation</li>
+                                <li>Strategic Planning and Implementation</li>
+                            </ul>
+                            {/* <div>
+                              <button type="button" name="" id="" class="btn btn-primary"><Link to='/contact-us'>Reach out</Link></button>
+                            </div> */}
+                    </div>
+                    <div className="service-image">
+                        <img src='./assets/images/clay-banks-LjqARJaJotc-unsplash.jpg' alt="" width={'500'} height={'500'}/>
+                    </div>
 
-                            </div>
-                            <div className="card__copy">
-                                <p>
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                </p>
-                            </div>
-                        </div>
-                        <div className="card">
-                            <div className="testimonial__image">
-                                <img src="https://images.unsplash.com/photo-1521139869420-edaae1bc7b9a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="Profile" width={'50'} height={'50'} />
-                            <p>John Doe</p>
 
-                            </div>
-                            <div className="card__copy">
-                                <p>
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                </p>
-                            </div>
-                        </div>
                 </div>
+
             </section>
-            <h1>This is for the footer</h1>
+            <Footer />
         </div>
     );
 }
