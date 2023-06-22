@@ -6,13 +6,13 @@ function Homepage() {
     return (
         <div>
             <Header />
-            <div className='Homepage'>
+            <div className='Homepage-container'>
                 <div className='welcome-section'>
                     <div className='Homepage-content'>
                         <h1><span className='Homepage-content-title'>Strategic Organizational Development Solutions</span></h1>
-                        <p className='Homepage-content-text'>Moore Advanced Solutions is a leading provider of tailored consulting services to higher education institutions, non-profit and corporate organizations.</p>
+                        <p className='Homepage-content-text'> <strong>Moore Advanced Solutions</strong> is a provider of tailored consulting services to higher education institutions, for-profit and non-profit organizations.</p>
                         <div className='target-box'>
-                            <button type="button" className="btn btn-primary"><Link to='/contact-us'>Contact Us</Link></button>
+                            <button type="button" className="btn btn-primary "><Link to='/contact-us'>Contact Us</Link></button>
                         </div>
                     </div>
                     <div className='Homepage-image'>
@@ -24,34 +24,32 @@ function Homepage() {
                 {/* What we do */}
                 <section className="what-we-do">
                     <div className="punchline">
-                        <h2>A simple and streamlined process</h2>
-                        <p>MAS goal is to create a supportive and positive consulting experience for all clients. The basis of client
-                        relationships is grounded in listening and identifying needs and collaborating with clients to develop
-                        realistic recommendations and solutions to meet their organizational needs.</p>
+                        <p> The goal at <strong><i className="tagline">Moore Advanced Solutions</i></strong> is to create a positive consulting experience for all clients. The foundation of clients relationships
+                            in grounded in listening and collaborating with clients to develop realistic recommendations and solutions to meet their organizational needs.</p>
+                    </div>
+                    <div className="step-exp">
+                       <h2>A simple and streamlined process</h2>
                     </div>
                     <div className="steps">
                         <div className="step">
-                            <img src="./assets/images/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg" alt=""/>
-                            <h2>Assess/Discovery</h2>
-                            <ul>
-                                <li>Identification of needs.</li>
-                                <li>Development - Diagnosis/Data collection if needed.</li>
-                            </ul>
+                        <img src="./assets/images/pexels-christina-morillo-1181605.jpg" alt=""/>
+                            <h2>Discovery</h2>
+                            <p>Diagnosis and assessment of needs</p>
                         </div>
                         <div className="step">
                             <img src="./assets/images/pexels-christina-morillo-1181605.jpg" alt=""/>
-                            <h2>Plan</h2>
-                            <ul>
-                                <li>Developing an action plan with Startegic recommendations.</li>
-                                <li>Implementation and evaluation.</li>
-                            </ul>
+                            <h2>Goal setting</h2>
+                            <p>Identification of objectives and goals</p>
+                        </div>
+                        <div className="step">
+                            <img src="./assets/images/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg" alt=""/>
+                            <h2>Planning</h2>
+                            <p>Development of plans and strategic recommentations</p>
                         </div>
                         <div className="step">
                             <img src="./assets/images/charles-forerunner-3fPXt37X6UQ-unsplash.jpg" alt=""/>
-                            <h2>Optimization</h2>
-                            <ul>
-                                <li>Feedback -Evaluation of the project</li>
-                            </ul>
+                            <h2>Evaluation</h2>
+                            <p>Evalution of project and implementation of improvement efforts</p>
                         </div>
                     </div>
                 </section>
@@ -63,21 +61,17 @@ function Homepage() {
                     </div>
                     <div className="about-us-content">
                         <h3>WHAT WE DO</h3>
-                        <p><strong>Moore Advanced Solutions</strong> provides assistance to higher education institutions and non-profit and
-                            corporate organizations to create, maintain, and improve organizational effectiveness. Specifically,
-                            <strong>Moore Advanced Solutions</strong> provides services to assist organizations with their quality assurance, quality
-                            management, and quality improvement needs to successfully achieve their business and/or
-                            organizational objectives. <strong>Moore Advanced Solutions</strong> primary areas of focus include: academic
-                            accreditation and regulatory affairs; board governance and development; organizational capacity
-                            building; and strategic planning, development, implementation, and assessment.</p>
+                        <p><strong><i>Moore Advanced Solutions</i></strong> provides consulting services to higher education institutions and for-profit and non-profit organization to create and improve
+                        their organizational effectiveness. Primary areas of focus include: academic accreditation and regulatory affairs; board governance and development; organizational
+                        capacity building; and strategic planning, development, implementation, and assessment.</p>
                     </div>
                 </section>
 
                 {/* Services section */}
                 <section className="services-offered">
                     <div className="services-offered-content">
-                        <h1 className="services-offered-title">Our Services</h1>
-                        <p>Moore Advanced Solutions: Tailored consulting for education, non-profits, and corporate organizations to optimize effectiveness and drive sustainable success.</p>
+                        <h1 className="services-offered-title">Services</h1>
+                        <p>Moore Advanced Solutions: Tailored consulting for education, for-profit, and non-profit organizations to optimize effectiveness and drive sustainable success.</p>
                     </div>
                     <div className="services-offered-list">
                         <div className="card main-service">
@@ -87,12 +81,11 @@ function Homepage() {
                             <div className="card__copy">
                                 <h1>HIGHER EDUCATION ACCREDITATION</h1>
                                 <br></br>
-                                <ul>
-                                    <li>Institutional and Programmatic Feasibility</li>
-                                    <li>Academic Program Development & Assessment</li>
-                                    <li>Accreditation and Self-Study Development</li>
-                                    <li>Institutional Policy Development</li>
-                                </ul>
+                                <p>Moore Advanced Solutions provides strategic support for organizations related to the initiation, planning, implementation, and ongoing maintenance of accreditation.</p>
+
+                                <div className="btn-link">
+                                    <Link to='/services'>Click here to learn more about services offered</Link>
+                                </div>
                             </div>
                         </div>
                         <div className="card">
@@ -100,14 +93,14 @@ function Homepage() {
                                 <img src="./assets/icons/team.png" alt="S" height={'80'} width={'80'}/>
                             </div>
                             <div className="card__copy">
-                                <h1>NON PROFIT AND CORPORATE</h1>
+                                <h1>ORGANIZATIONAL EFFECTIVENESS</h1>
                                 <br></br>
-                            
-                            <ul>
-                                <li>Capacity building</li>
-                                <li>Business goal setting</li>
-                                <li>Professional development training</li>
-                            </ul>
+                                <p>Moore Advanced Solutions provides support and guidance to organizations in managing such challenges. Specifically, Moore Advanced Solutions provides overall assistance with various elements of organizational effectiveness from strategic planning or organizational capacity building.</p>
+
+                                <div className="btn-link">
+                                    <Link to='/services'>Click here to learn more about services offered</Link>
+                                </div>
+
                             </div>
                         </div>
                         {/* <div className="card">
@@ -153,7 +146,7 @@ function Homepage() {
 
                                 {/* testimonial */}
                 {/* this section should come after the services section */}
-                <div className="testimonial">
+                {/* <div className="testimonial">
                     <div className="text-wrapper">
                         <h2>Placeholder</h2>
                         <p className="test-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lorem sed sapien ultrices ultrices sed sed sapien ultrices ultrices sed</p>
@@ -175,16 +168,16 @@ function Homepage() {
                     </div>
 
 
-                </div>
+                </div> */}
 
 
                 {/* CTA */}
                 <section className='cta-section'>
                     <div className='text-box'>
                         <h2>Let's work together</h2>
-                        <p>
+                        {/* <p>
                         Towards better organizational quality assurance and management.
-                        </p>
+                        </p> */}
                     </div>
 
                     <div className='link-box'>

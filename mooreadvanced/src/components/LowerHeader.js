@@ -1,4 +1,4 @@
-const LowerHeader = ({ textOne = null, textTwo }) => {
+const LowerHeader = ({ textOne = null, textTwo = null }) => {
   return (
     <header className='header container mb-section'>
       <img
