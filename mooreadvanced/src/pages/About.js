@@ -3,125 +3,125 @@ import Header from '../components/Header';
 import LowerHeader from '../components/LowerHeader';
 import Footer from '../components/Footer';
 
-const ENGAGEMENTS = [
-  {
-    title: 'Co-Presenter',
-    content: `“Evaluation of Challenges for the
-        Accreditation and Oversight of Third-Party Ed-Tech Providers.”
-        International Network for Quality Assurance Agencies in Higher Education
-        Annual Convention, June, 2023 Astana, Kazakhstan`,
-    logoName: 'inqaahe.png',
-  },
-  {
-    title: 'Contributing Expert Consultant',
-    content: `“Project A457: Measures and mechanisms for addressing racism and
-          racial discrimination in United Nations system organization” Joint
-          Inspection Unit of the United Nations System, March, 2023`,
-    logoName: 'un.svg',
-  },
-  {
-    title: 'Co-Presenter',
-    content: `“An Integrated Approach to People
-        Development across the QA Organization.” International Network for
-        Quality Assurance Agencies in Higher Education Annual Forum, June, 2022
-        Mexico City, Mexico`,
-    logoName: 'ASPPH.png',
-  },
-  {
-    title: 'External Reviewer',
-    content: `for the Health and Medicine Division
-        of the National Academies of Sciences, Engineering, and Medicine’s
-        publication- Exploring a Culture of Fairness, Respect, and Anti-Racism
-        in Health Professions Education: Educational Product of a Workshop
-        Series. May 2022`,
-    logoName: '',
-  },
+// const ENGAGEMENTS = [
+//   {
+//     title: 'Co-Presenter',
+//     content: `“Evaluation of Challenges for the
+//         Accreditation and Oversight of Third-Party Ed-Tech Providers.”
+//         International Network for Quality Assurance Agencies in Higher Education
+//         Annual Convention, June, 2023 Astana, Kazakhstan`,
+//     logoName: 'inqaahe.png',
+//   },
+//   {
+//     title: 'Contributing Expert Consultant',
+//     content: `“Project A457: Measures and mechanisms for addressing racism and
+//           racial discrimination in United Nations system organization” Joint
+//           Inspection Unit of the United Nations System, March, 2023`,
+//     logoName: 'un.svg',
+//   },
+//   {
+//     title: 'Co-Presenter',
+//     content: `“An Integrated Approach to People
+//         Development across the QA Organization.” International Network for
+//         Quality Assurance Agencies in Higher Education Annual Forum, June, 2022
+//         Mexico City, Mexico`,
+//     logoName: 'ASPPH.png',
+//   },
+//   {
+//     title: 'External Reviewer',
+//     content: `for the Health and Medicine Division
+//         of the National Academies of Sciences, Engineering, and Medicine’s
+//         publication- Exploring a Culture of Fairness, Respect, and Anti-Racism
+//         in Health Professions Education: Educational Product of a Workshop
+//         Series. May 2022`,
+//     logoName: '',
+//   },
 
-  {
-    title: 'Panelist',
-    content: `“The Role of Accreditation in Advancing
-        Diversity, Equity, and Inclusion.” Association of Schools and Programs
-        of Public Health Annual Meeting, March 2022`,
-    logoName: '',
-  },
-  {
-    title: 'Presenter',
-    content: `“Exploring a Culture of Fairness, Respect,
-        and Anti-racism Through Diversity, Equity, and Inclusion in Health
-        Professions Education: A workshop on leveraging accreditation to improve
-        DEI and eliminate racism in health professions education.” Global Forum
-        on Innovation in Health Professional Education, National Academies of
-        Sciences, Engineering, and Medicine, February 2022, Virtual`,
-    logoName: '',
-  },
-  {
-    title: 'Keynote Presenter',
-    content: `“Moving toward a more socially
-        conscious oversight of quality: social justice and quality assurance,”
-        Commission on Sport Management Annual Accreditation Conference, February
-        2021, Virtual`,
-    logoName: '',
-  },
-  {
-    title: '2021 Appeal Board Member (Volunteer)',
-    content: `Accreditation
-        Review Commission on Education for the Physician Assistant`,
-    logoName: '',
-  },
-  {
-    title: 'Panel Facilitator',
-    content: `“Data, Accreditation & Equity”,
-        Council for Higher Education Accreditation Conference, January 2020,
-        Washington, DC, USA`,
-    logoName: '',
-  },
-  {
-    title: 'Co-Presenter',
-    content: `Assessing and Ensuring Board
-        Accountability, Association for Specialized and Professional Accreditors
-        Conference, September 2019, Arlington, VA, USA`,
-    logoName: '',
-  },
-  {
-    title: 'Guest Speaker',
-    content: `“Public/Private Partnership in
-        International Education”, American University Graduate Seminar, November
-        2014, Washington, DC, USA`,
-    logoName: '',
-  },
-  {
-    title: 'Panelist',
-    content: `Overview of Higher Education Quality
-        Assurance and Accreditation, Morgan State University Graduate Seminar,
-        October 2012, Baltimore, MD, USA`,
-    logoName: '',
-  },
-  {
-    title: 'Authored article entitled',
-    content: `“Lessons on Civic Education
-        from the Past and the Present.” Around the Circle: Research & Practice.
-        Volume 3, Issue 1. August 2005.`,
-    logoName: '',
-  },
-  {
-    title: 'Co-authored',
-    content: `published research study using regression
-        statistics entitled “Participation in Sports and Civic Engagement.”
-        February 2006. CIRCLE Fact Sheet`,
-    logoName: '',
-  },
-];
+//   {
+//     title: 'Panelist',
+//     content: `“The Role of Accreditation in Advancing
+//         Diversity, Equity, and Inclusion.” Association of Schools and Programs
+//         of Public Health Annual Meeting, March 2022`,
+//     logoName: '',
+//   },
+//   {
+//     title: 'Presenter',
+//     content: `“Exploring a Culture of Fairness, Respect,
+//         and Anti-racism Through Diversity, Equity, and Inclusion in Health
+//         Professions Education: A workshop on leveraging accreditation to improve
+//         DEI and eliminate racism in health professions education.” Global Forum
+//         on Innovation in Health Professional Education, National Academies of
+//         Sciences, Engineering, and Medicine, February 2022, Virtual`,
+//     logoName: '',
+//   },
+//   {
+//     title: 'Keynote Presenter',
+//     content: `“Moving toward a more socially
+//         conscious oversight of quality: social justice and quality assurance,”
+//         Commission on Sport Management Annual Accreditation Conference, February
+//         2021, Virtual`,
+//     logoName: '',
+//   },
+//   {
+//     title: '2021 Appeal Board Member (Volunteer)',
+//     content: `Accreditation
+//         Review Commission on Education for the Physician Assistant`,
+//     logoName: '',
+//   },
+//   {
+//     title: 'Panel Facilitator',
+//     content: `“Data, Accreditation & Equity”,
+//         Council for Higher Education Accreditation Conference, January 2020,
+//         Washington, DC, USA`,
+//     logoName: '',
+//   },
+//   {
+//     title: 'Co-Presenter',
+//     content: `Assessing and Ensuring Board
+//         Accountability, Association for Specialized and Professional Accreditors
+//         Conference, September 2019, Arlington, VA, USA`,
+//     logoName: '',
+//   },
+//   {
+//     title: 'Guest Speaker',
+//     content: `“Public/Private Partnership in
+//         International Education”, American University Graduate Seminar, November
+//         2014, Washington, DC, USA`,
+//     logoName: '',
+//   },
+//   {
+//     title: 'Panelist',
+//     content: `Overview of Higher Education Quality
+//         Assurance and Accreditation, Morgan State University Graduate Seminar,
+//         October 2012, Baltimore, MD, USA`,
+//     logoName: '',
+//   },
+//   {
+//     title: 'Authored article entitled',
+//     content: `“Lessons on Civic Education
+//         from the Past and the Present.” Around the Circle: Research & Practice.
+//         Volume 3, Issue 1. August 2005.`,
+//     logoName: '',
+//   },
+//   {
+//     title: 'Co-authored',
+//     content: `published research study using regression
+//         statistics entitled “Participation in Sports and Civic Engagement.”
+//         February 2006. CIRCLE Fact Sheet`,
+//     logoName: '',
+//   },
+// ];
 
-function ListItem({ logoName = null, title, content }) {
-  return (
-    <li>
-      <img src={`assets/client-logos/${logoName}`} alt='client logo' />
+// function ListItem({ logoName = null, title, content }) {
+//   return (
+//     <li>
+//       <img src={`assets/client-logos/${logoName}`} alt='client logo' />
 
-      <h5>{title}</h5>
-      <p>{content}</p>
-    </li>
-  );
-}
+//       <h5>{title}</h5>
+//       <p>{content}</p>
+//     </li>
+//   );
+// }
 
 const About = () => {
   return (
