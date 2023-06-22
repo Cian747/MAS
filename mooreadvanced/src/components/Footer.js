@@ -5,9 +5,9 @@ function Footer() {
     <footer className='footer container'>
       <div className='footer-content'>
         <div className='logo-col'>
-          <p className='footer-heading'>
+          {/* <p className='footer-heading'>
             We're redefining what it means to grow
-          </p>
+          </p> */}
           <Link to='/' className='footer-logo'>
             <img
               src='./assets/logo/Moore Advanced Solutions (1).png'
@@ -26,19 +26,26 @@ function Footer() {
         <div className='address-col'>
           <p className='footer-heading'>Contact</p>
           <address class='contacts'>
-            <p class='address'>
-              623 Harrison St., 2nd Floor, San Francisco, CA 94107
-            </p>
+            <p><strong className='footer-contact-name'>Moore Advanced Solutions</strong></p>
             <p>
-              <a class='footer-link' href='tel:800-234-3432'>
-                800-234-3432
-              </a>
+              3261 Old Washington Road, Suite 2020,    
+            </p>
+            <p>Waldorf, USA</p>
+            <p className='address'>MD 20602-5432, USA</p>
+
+            <p>
+              <div className='whatsapp-contact'>
+                {/* <img src='./assets/icons/whatsapp (1).png' alt='whatsapp' className='whatsapp' width={'30'} height={'30'}/> */}
+                <a class='footer-link' href='tel:+1 301-848-9600'>
+                  +1 301-848-9600
+                </a>
+              </div>
               <br />
               <a
                 class='footer-link'
-                href='mailto:kmoore@mooreadvancedsolutions.com'
+                href='mailto:info@mooreadvancedsolutions.com'
               >
-                kmoore@mooreadvancedsolutions.com
+                info@mooreadvancedsolutions.com
               </a>
             </p>
           </address>
@@ -57,7 +64,7 @@ function Footer() {
               <Link to='/about-us'>About</Link>
             </li>
             <li>
-              <Link to='/contact-us'>Contact Us</Link>
+              {/* <Link to='/contact-us'>Contact Us</Link> */}
             </li>
             <li>
               <Link to='/'>FAQ</Link>

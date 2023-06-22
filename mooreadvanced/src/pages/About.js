@@ -149,7 +149,7 @@ const About = () => {
             <div className='text-box'>
               <h4>Principal Consultant</h4>
               <h3>Kimberlee Moore</h3>
-              <p>President and Principal Consultant</p>
+              <p>Principal Consultant</p>
             </div>
             <div className='img-box'>
               <img
@@ -160,6 +160,7 @@ const About = () => {
           </div>
           <div className='founder-section-content'>
             <p>
+
               Ms. Kimberlee Moore has almost two decades of experience in global
               higher education quality assurance and accreditation. She has
               advised individuals and organizations on developing and sustaining

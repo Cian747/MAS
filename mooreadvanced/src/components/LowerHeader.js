@@ -1,4 +1,5 @@
 const LowerHeader = ({ text }) => {
+
   return (
     <header className='lower-header container mb-section'>
       <p>{text}</p>
