@@ -31,9 +31,13 @@ function Footer() {
                 Moore Advanced Solutions
               </strong>
             </p>
-            <p>3261 Old Washington Road, Suite 2020,</p>
-            <p>Waldorf, USA</p>
-            <p className='address'>MD 20602-5432, USA</p>
+            <p>
+              3261 Old Washington Road,   
+            </p>
+            <p>Suite 2020,</p>
+            <p>Waldorf, MD, USA</p>
+            <p className='address'>MD 20602-5432</p>
+
 
             <p>
               <div className='whatsapp-contact'>

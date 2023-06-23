@@ -567,7 +567,8 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-
+  width: auto;
+ 
   color: #162320;
 }
 
@@ -614,6 +615,7 @@ button {
 .steps {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
@@ -636,8 +638,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 15px;
-  color: #eaf1f0;
+  padding: 10px;
+  color: #EAF1F0;  
   width: 300px;
 }
 
@@ -652,7 +654,7 @@ button {
 
 .what-we-do {
   padding: 10px;
-
+  width: auto;
   background: #1e3653;
 }
 
@@ -678,11 +680,17 @@ strong {
   color: #fff;
 }
 
-i {
-  font-size: medium;
+.tag-name{
+  font-size:24px;
+}
+
+i{
+  font-size: large;
   font-weight: 700;
   color: #1e3653;
 }
+
+
 
 .about-us-image {
   height: 400;
@@ -1238,9 +1246,10 @@ input:checked ~ .faq-content {
     flex-direction: column;
   }
 
-  .service-image img {
-    width: 350;
-    height: 350;
+  .service-image img{
+    width: 350px;
+    height: 350px;
+
   }
 }
 
@@ -1294,12 +1303,14 @@ input:checked ~ .faq-content {
     display: flex;
     flex-direction: column-reverse;
   }
-  .Homepage-content {
-    font-size: medium;
-  }
 
-  .steps {
-    flex-direction: column;
+  /* .Homepage-content{
+    font-size: medium;
+
+  } */
+
+  .steps{
+    /* flex-direction: column; */
     align-items: center;
   }
 
@@ -1324,4 +1335,10 @@ input:checked ~ .faq-content {
     width: 350;
     height: 350;
   }
+  .about-us-image img{
+    width: 500px;
+    height: 300px;
+  }
+
+
 }

@@ -122,6 +122,7 @@ const About = () => {
             assurance, quality management and quality improvement needs to
             successfully achieve their business and/or organizational
             objectives.
+
           </p>
         </section> */}
         <section className='founder-section mb-section '>
