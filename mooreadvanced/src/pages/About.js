@@ -130,24 +130,24 @@ const About = () => {
       <LowerHeader text='About' />
       <main className='container'>
         <section className='instructions-section mb-section '>
-          <h3>We Support Organizations</h3>
+          {/* <h3>We Support Organizations</h3> */}
           {/* <p>
             At <em>Moore Advanced Solutions</em> we offer services that support
             organizations with their quality assurance, quality management and
             quality improvement needs to successfully achieve their business
             and/or organizational objectives.
           </p> */}
-          <p>
+          {/* <p>
             We offer services that support organizations with their quality
             assurance, quality management and quality improvement needs to
             successfully achieve their business and/or organizational
             objectives.
-          </p>
+          </p> */}
         </section>
         <section className='founder-section mb-section '>
           <div className='founder-section-header'>
             <div className='text-box'>
-              <h4>Principal Consultant</h4>
+              {/* <h4>Principal Consultant</h4> */}
               <h3>Kimberlee Moore</h3>
               <p>Principal Consultant</p>
             </div>
