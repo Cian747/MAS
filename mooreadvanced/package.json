@@ -2,7 +2,7 @@
   "name": "mooreadvanced",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Cian747.github.io/MAS",
+  "homepage": "https://Cian747.github.io/react-gh-pages",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.5",
